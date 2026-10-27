@@ -1,0 +1,61 @@
+# Experiment outputs and geometry checkpoints (keep outside Git; share as release assets)
+/results/
+/results_*/
+/geometry_*/
+/logs/
+/reference_deps/
+# External checkout has its own Git history; restore the recorded commit per README
+/reference_rasterizer/
+
+# Datasets and model files
+/data/
+/datasets/
+*.pt
+*.pth
+*.ckpt
+*.ply
+*.safetensors
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Python / CUDA build products
+__pycache__/
+*.py[cod]
+*.so
+*.o
+*.a
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+known_hosts
+ssh_driver.py
+
+# Editor / OS / LaTeX temporary files (PDF figures and report sources remain tracked)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
